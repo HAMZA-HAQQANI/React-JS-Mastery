@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import reactLogo from'./assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
@@ -15,7 +15,8 @@ function App() {
       setCounter(counter ++)
       console.log(`Counter value after adding = ${counter}`)
       
-    }else{
+    }
+    else{
       console.log(`counter value is not updated because it's value is ${counter}`)
     }
   }
