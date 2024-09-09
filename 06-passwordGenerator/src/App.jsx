@@ -26,7 +26,7 @@ function App() {
 
   const copyPasswordToClipBoard = useCallback(()=>{
     passwordRef.current?.select()
-    // passwordRef.current?.serSelectionRange(0,100)
+    // passwordRef.current?.SelectionRange(0,100)
     window.navigator.clipboard.writeText(password)
   },[password])
 
@@ -71,7 +71,7 @@ function App() {
            defaultChecked={numberAllowed}
            id='numberInput'
            onChange={()=>{
-            setNumberAllowed((prev)=>!prev)
+           setNumberAllowed((prev)=>!prev)
            }}
           />
           <label htmlFor="numberInput">Numbers</label>
